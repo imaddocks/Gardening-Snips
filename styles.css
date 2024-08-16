@@ -1,0 +1,471 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #0C2610;
+    background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+a {
+    color: #68A629;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #68A629;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E5902;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2E5902;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar-logo a {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo .material-symbols-outlined {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right li {
+    margin: 0 15px;
+}
+
+.navbar-right a {
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a:hover {
+    color: #1B4001;
+}
+
+/* Navbar Icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons a:hover {
+    color: #68A629;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    background-image: url('./resources/pexels-markusspiske-131772.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 250px 20px;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.hero-banner h1,
+.hero-banner p,
+.hero-banner .cta-button {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-banner p {
+    font-size: 2rem;
+}
+
+/* CTA Button in Hero Banner */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #68A629;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2E5902;
+}
+
+
+
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #0C2610;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.service-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #68A629;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-item span {
+    font-size: 3rem;
+}
+
+.service-item h3 {
+    margin-bottom: 5px;
+}
+
+.service-item span.material-symbols-outlined {
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #1B4001;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about p {
+    margin-bottom: 30px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.about-images img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+
+/* Opening Times Section */
+.opening-times {
+    padding: 50px 20px;
+    background-color: #68A629;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.opening-times-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.opening-times-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opening-times-image img {
+    border-radius: 50%; /* Circle shape */
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    object-fit: cover;
+}
+
+.opening-times-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.opening-times-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.opening-times-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.opening-times-list i {
+    margin-right: 10px;
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #2E5902;
+}
+
+/* Two Large Images Section */
+.two-large-images {
+    display: flex;
+    justify-content: center; /* Center align images horizontally */
+    gap: 20px; /* Space between images */
+    padding: 50px 20px; /* Add padding around the section */
+    background-color: #0C2610; /* Background color */
+}
+
+.large-image {
+    flex: 1; /* Allow images to grow and fill the space equally */
+    max-width: 600px; /* Maximum width of each image */
+    height: 300px; /* Fixed height for consistency */
+    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+    position: relative; /* To position image inside */
+}
+
+.large-image img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Footer */
+footer {
+    background-color: #0C2610;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Footer Icons */
+.footer-icons {
+    margin-top: 20px;
+}
+
+.footer-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer-icons a:hover {
+    color: #68A629;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* Footer Links */
+.footer-links {
+    margin: 20px 0; /* Add some space above and below */
+    color: #68A629; /* Text color */
+}
+
+.footer-links a {
+    margin: 0 10px; /* Space between links */
+    font-size: 0.6rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase;
+}
+
+.footer-links a:hover {
+    color: white; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .about-images {
+        flex-direction: column;
+    }
+
+    .about-images img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-banner p {
+        font-size: 1rem;
+    }
+}
