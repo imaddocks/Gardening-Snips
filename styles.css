@@ -64,6 +64,7 @@ button:hover {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .navbar-list {
@@ -468,4 +469,12 @@ footer p {
     .hero-banner p {
         font-size: 1rem;
     }
+}
+
+/* Terms and Conditions */
+
+#terms {
+    width: 80%;
+    background-color: #1B4001;
+    color:white;
 }
